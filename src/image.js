@@ -1,10 +1,15 @@
 export default function(drink) {
   const div = document.createElement("div");
   const drinkName = document.createElement("h2");
-  const image = document.createElement("img");
+  //const image = document.createElement("img");
 
-  image.className = "image-container";
-  image.src = drink.url;
+  drinkName.innerHTML = drink.name;
+  div.className = "image-container";
+  //image.src = drink.url;
 
-  return image;
+  div.appendChild(drinkName);
+  div.style.backgroundImage = `url(${drink.url})`;
+  //div.appendChild(image);
+
+  return div;
 }

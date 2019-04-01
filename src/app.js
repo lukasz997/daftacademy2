@@ -5,7 +5,7 @@ export default function() {
   const { body } = document;
 
   const main = document.createElement("div");
-  main.className = "image-container";
+  main.className = "app-container";
 
   DRINKS.forEach(drink => {
     const newImage = ImageTemplate(drink);
