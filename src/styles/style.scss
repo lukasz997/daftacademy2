@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Noto+Serif");
+
+$background-color: #eef8f6;
+$image-border-color: #fbdeb3;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  background-color: $background-color;
+  margin: 50px 20px;
+  box-sizing: border-box;
+  padding: 30px 2vw;
+
+  display: inline-block;
+  text-align: center;
+
+  &::before {
+    content: "d'inks";
+    border: 3px solid black;
+    padding: 10px 30px;
+    position: absolute;
+    font-size: 30px;
+    left: 40px;
+    top: 20px;
+  }
+
+  .image-container {
+    max-width: 300px;
+    max-height: 300px;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 20px 20px;
+    transition: 0.2s;
+
+    &:hover {
+      border: 5px solid $image-border-color;
+      font-family: "Noto Serif", serif;
+    }
+  }
+}
